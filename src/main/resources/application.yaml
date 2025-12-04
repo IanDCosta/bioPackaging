@@ -1,0 +1,8 @@
+camunda:
+  client:
+    mode: self-managed # Tells the SDK you are running locally (Docker), not SaaS
+    zeebe:
+      gateway-address: 127.0.0.1:26500 # The address of the engine
+      defaults:
+        security:
+          plaintext: true # Disable TLS for local development
